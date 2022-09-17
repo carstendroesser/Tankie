@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- icon to show that it's a new station -->
+
+        <ImageView
+            android:id="@+id/listitemIconImageView"
+            android:layout_width="@dimen/imageview_size_listitem"
+            android:layout_height="@dimen/imageview_size_listitem"
+            android:layout_margin="@dimen/padding_normal"
+            android:background="@drawable/bg_listitem_icon"
+            android:padding="@dimen/padding_default"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_station"/>
+
+        <!-- header texts -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_listitem_vertical"
+            android:paddingTop="@dimen/padding_listitem_vertical">
+
+            <!-- brand textview-->
+
+            <TextView
+                android:id="@+id/listitemBrandTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_listitem_primary"
+                tools:text="ARAL"/>
+
+            <!-- distance textview -->
+
+            <TextView
+                android:id="@+id/listitemDistanceTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0.6"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_listitem_secondary"
+                tools:text="3.4 km"/>
+
+        </LinearLayout>
+
+        <!-- the priceview -->
+
+        <com.carstendroesser.tanky.views.TagView
+            android:id="@+id/listitemPriceTagView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/padding_normal"
+            android:gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="@dimen/iconsize_including_padding"
+            android:layout_height="match_parent"/>
+
+        <!-- street textview -->
+
+        <TextView
+            android:id="@+id/listitemStreetTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:alpha="0.6"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_listitem_secondary"
+            tools:text="Erkrather Straße 273"/>
+
+        <!-- isOpen textview -->
+
+        <TextView
+            android:id="@+id/listitemIsOpenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:singleLine="true"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/textsize_listitem_secondary"
+            android:textStyle="bold"
+            tools:text="geöffnet"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

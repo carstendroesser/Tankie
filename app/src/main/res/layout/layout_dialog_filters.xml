@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_dialog">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageview_size_small"
+                android:layout_height="@dimen/imageview_size_small"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_radius"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_default"
+                android:text="@string/radius"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_header"/>
+
+            <TextView
+                android:id="@+id/filtersRadiusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textColor="@color/black_alpha"
+                android:textSize="@dimen/textsize_header"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/filtersRadiusSeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:max="20"
+            android:secondaryProgress="20"
+            android:secondaryProgressTint="@color/colorAccentAlpha"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_details"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageview_size_small"
+                android:layout_height="@dimen/imageview_size_small"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_station"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_default"
+                android:text="@string/type"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_header"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/filtersTypeRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_default"
+            android:paddingTop="@dimen/padding_default">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/filtersTypeDiesel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/diesel"
+                app:buttonTint="@color/colorAccent"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/filtersTypeE5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e5"
+                app:buttonTint="@color/colorAccent"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/filtersTypeE10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/e10"
+                app:buttonTint="@color/colorAccent"/>
+
+        </RadioGroup>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_details"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageview_size_small"
+                android:layout_height="@dimen/imageview_size_small"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_closed"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_default"
+                android:text="@string/openings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_header"/>
+
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatCheckBox
+            android:id="@+id/filtersOpeningsCheckBox"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:text="@string/filter_closed_stations"
+            android:textColor="@color/black"
+            app:buttonTint="@color/colorAccent"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_details"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/imageview_size_small"
+                android:layout_height="@dimen/imageview_size_small"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_sortby"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/padding_default"
+                android:text="@string/sortby"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_header"/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/filtersSortByRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_default"
+            android:paddingTop="@dimen/padding_default">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/filtersSortByPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_sortby_price"
+                app:buttonTint="@color/colorAccent"/>
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/filtersSortByDistance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_sortby_distance"
+                app:buttonTint="@color/colorAccent"/>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Tanky</string>
+    <string name="loading">sucht...</string>
+    <string name="no_tankstellen">keine Tankstellen gefunden</string>
+    <string name="error">ein Fehler ist aufgetreten</string>
+    <string name="retry">erneut laden</string>
+    <string name="amount_stations_found">" Tankstellen gefunden!"</string>
+    <string name="connection_error_message">bei der Verbindung ist ein Fehler aufgetreten</string>
+    <string name="distance">" km"</string>
+    <string name="is_open">geöffnet</string>
+    <string name="is_closed">geschlossen</string>
+    <string name="search">Suchen</string>
+    <string name="no_locations">keine Orte gefunden</string>
+    <string name="already_searching">Es wird bereits gesucht...</string>
+    <string name="no_address">keine gültige Adresse</string>
+    <string name="search_input_hint">Straße, Ort oder PLZ eingeben</string>
+    <string name="openingtime_conjunction">" bis "</string>
+    <string name="openings">Öffnungszeiten</string>
+    <string name="address">Adresse</string>
+    <string name="prices">Preise</string>
+    <string name="diesel">Diesel</string>
+    <string name="e5">E5</string>
+    <string name="e10">E10</string>
+    <string name="button_cancel">abbrechen</string>
+    <string name="filters">Filter</string>
+    <string name="button_ok">anwenden</string>
+    <string name="radius">Umkreis</string>
+    <string name="type">Kraftstoffart</string>
+    <string name="filter_closed_stations">geschlossene Tankstellen filtern</string>
+    <string name="filter_sortby_price">Preis</string>
+    <string name="filter_sortby_distance">Distanz</string>
+    <string name="sortby">Sortieren nach...</string>
+    <string name="not_available">n/a</string>
+    <string name="info_message">Diese App nutzt von Tankerkönig (www.Tankerkönig.de) bereitgestellte Daten zur Anzeige von Tankstellen-Informationen. Die Daten stehen unter der Creative-Commons-Lizenz CC BY 4.0. Die Nutzung der App ist nur unter Anerkennung der Lizenz möglich. Sind sie damit einverstanden?</string>
+</resources>

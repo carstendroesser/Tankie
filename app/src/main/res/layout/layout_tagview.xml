@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools"
+       tools:ignore="SpUsage">
+
+    <!-- the tag-head -->
+    <ImageView
+        android:layout_width="@dimen/tagview_tagthing_width"
+        android:layout_height="@dimen/tagview_body_height"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_pricetag_spitze"
+        android:tint="@color/colorPrimary"/>
+
+    <!-- the tag-body -->
+    <TextView
+        android:id="@+id/tagview_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tagview_body_height"
+        android:layout_gravity="center"
+        android:background="@drawable/tagview_body_background"
+        android:gravity="center_vertical"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_listitem_primary"
+        tools:text="137€"/>
+
+</merge>

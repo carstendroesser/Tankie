@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_default"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:paddingTop="@dimen/padding_default">
+
+    <TextView
+        android:id="@+id/listitemOpeningDaysTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tab_space"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_listitem_primary"
+        tools:text="Montag bis Freitag"/>
+
+    <TextView
+        android:id="@+id/listitemOpeningTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/tab_space"
+        android:alpha="0.6"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_listitem_secondary"
+        tools:text="10:00 bis 23:00 Uhr"/>
+
+</LinearLayout>

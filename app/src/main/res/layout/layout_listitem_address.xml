@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/padding_listitem_vertical"
+    android:paddingLeft="@dimen/padding_normal"
+    android:paddingRight="@dimen/padding_normal"
+    android:paddingTop="@dimen/padding_listitem_vertical">
+
+    <!-- address-name textview-->
+
+    <TextView
+        android:id="@+id/listitemAddressName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_listitem_primary"
+        tools:text="Düsseldorf"/>
+
+    <!-- address-zip textview -->
+
+    <TextView
+        android:id="@+id/listitemAddressZip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alpha="0.6"
+        android:singleLine="true"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_listitem_secondary"
+        tools:text="40627"/>
+
+</LinearLayout>
